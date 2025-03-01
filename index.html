@@ -1,11 +1,88 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--  -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <!--  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
     <title>Document</title>
 </head>
-<body>
-    
+
+<body class="bg-slate-100  ">
+    <section class="w-11/12 mx-auto">
+        <header>
+            <nav class="flex justify-between items-center bg-white py-5 px-5 rounded-xl  ">
+                <div class="flex justify-between items-center gap-2 ">
+                    <img src="assets/logo.png" alt="">
+                    <h2 class="text-3xl">Dev<span class="font-bold">Board</span></h2>
+                </div>
+                <div class="flex justify-between items-center gap-5 ">
+                    <span class="flex justify-between items-center gap-2 bg-slate-100 py-1 px-4 rounded-4xl text-2xl">
+                        <i class="fas fa-check-square text-[#3752FD]"></i>
+                        <h1 class="font-bold">23</h1>
+                    </span>
+                    <img src="assets/theme-btn.png" alt="">
+                </div>
+
+            </nav>
+            <section class="py-5 ">
+                <div class="flex justify-between  items-center gap-4">
+                    <div class=" flex-1 rounded-xl bg-white py-5 ">
+                        <div class="flex gap-4  justify-between px-4 ">
+                            <div class="flex items-center gap-3 bg-slate-100 rounded-lg px-10">
+                                <i class="fas fa-check-square text-[#3752FD] text-xl "></i>
+                                <span>
+                                    <p class="">Task Assigned</p>
+                                    <h1 class="text-2xl font-bold">05</h1>
+                                </span>
+
+                            </div>
+                            <div
+                                class="flex gap-3 items-center  rounded-lg  bg-linear-to-r from-[#3752FD] to-blue-500 p-10 flex-1 ">
+
+                                <img src="assets/board.png" alt="">
+                                <p class="text-white  text-xl">Discover Something <br> New Today!</p>
+                            </div>
+                            <div class="flex items-center gap-3  bg-slate-100 rounded-lg px-10 ">
+                                <img src="assets/calender.png" alt="">
+                                <p class="text-xl">Wed , <br>
+                                    <span class="font-bold">Jul 28 2025 </span>
+                                </p>
+                            </div>
+                        </div>
+                        
+                    </div>
+                    <!--  -->
+                    <div>
+                        <h1>kkkkkkkkkkkkkkkkkkkkkkkkkk</h1>
+                    </div>
+                    <!--  -->
+                    <div class="bg-white px-25 py-8 rounded-2xl w-80 h-full">
+                        <span class="flex justify-between items-center pb-2 ">
+                            <i class="fa-solid fa-rotate-right"></i>
+                            <h1>Activity Log</h1>
+                        </span>
+                        <button class="bg-[#3752FD] px-3 py-2 rounded-xl text-white p">Clear History</button>
+                        <div id="history-container">
+
+
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section>
+
+            </section>
+        </header>
+    </section>
+
 </body>
+
 </html>
