@@ -40,7 +40,7 @@ let lastButton = allButton[allButton.length - 1];
 lastButton.addEventListener('click', function(event) {
     event.preventDefault();
 
-    alert('Board updated successfully!');
+   
     alert('Task Completed! ✅');
 
     updateTask(event, this);
