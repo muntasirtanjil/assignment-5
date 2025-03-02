@@ -7,7 +7,7 @@
     <!--  -->
     <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-   
+
     <!--  -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
         integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
@@ -27,7 +27,7 @@
                 <div class="flex justify-between items-center gap-5 ">
                     <span class="flex justify-between items-center gap-2 bg-slate-100 py-1 px-4 rounded-4xl text-2xl">
                         <i class="fas fa-check-square text-[#3752FD]"></i>
-                        <h1 class="font-bold">23</h1>
+                        <h1 id="add" class="font-bold">23</h1>
                     </span>
                     <img src="assets/theme-btn.png" alt="">
                 </div>
@@ -42,7 +42,7 @@
                                     <i class="fas fa-check-square text-[#3752FD] text-xl "></i>
                                     <span>
                                         <p class="">Task Assigned</p>
-                                        <h1 class="text-2xl font-bold">05</h1>
+                                        <h1 id="cut" class="text-2xl font-bold">06</h1>
                                     </span>
 
                                 </div>
@@ -54,7 +54,7 @@
                                 </div>
                                 <div class="flex items-center gap-3  bg-slate-100 rounded-lg px-10 ">
                                     <img src="assets/calender.png" alt="">
-                                    <p class="text-xl">Wed , <br>
+                                    <p id="date" class="text-xl">Wed , <br>
                                         <span class="font-bold">Jul 28 2025 </span>
                                     </p>
                                 </div>
@@ -64,35 +64,36 @@
                         <!--  -->
                         <div class="bg-white grid grid-cols-3  gap-4 mt-4 px-4 w-full min-w-0">
                             <!--  -->
-                            <div class="bg-slate-100 p-4 rounded-xl ">
+                            <div class="bg-slate-100 p-4 rounded-xl card ">
                                 <h1 class="bg-white rounded-lg w-20 text-center">ShopEase</h1>
                                 <br>
-                                <h1 class="text-xl font-semibold">Fix Mobile Button Issue </h1>
+                                <h1  class=" heading text-xl font-semibold">Fix Mobile Button Issue </h1>
                                 <br>
                                 <p
-                                    class="w-[230px]  bg-white overflow-hidden text-ellipsis line-clamp-2  p-4 rounded-xl">
+                                    class="w-[230px]  bg-white overflow-hidden text-ellipsis line-clamp-2  p-1 rounded-xl">
                                     Debug
                                     using Chrome DevTools, check for overlapping elements, and ensure onClick works
                                     properly</p>
                                 <br>
-                                <div class="flex items-center justify-between rounded-xl ">
+                                <div class="flex items-center justify-between rounded-xl  ">
                                     <span>
                                         <p>Deadline</p>
                                         <h1 class="font-bold">21 March 2025</h1>
                                     </span>
-                                    <button class="bg-[#3752FD] px-3 py-2 rounded-xl text-white p">Completed</button>
+                                    <button
+                                        class=" clickButton bg-[#3752FD] px-3 py-2 rounded-xl text-white p">Completed</button>
 
                                 </div>
                             </div>
 
                             <!--  -->
-                            <div class="bg-slate-100 p-4 rounded-xl ">
+                            <div class="bg-slate-100 p-4 rounded-xl card  ">
                                 <h1 class="bg-white rounded-lg w-20 text-center">CloudSync</h1>
                                 <br>
-                                <h1 class="text-xl font-semibold">Add Dark Mode</h1>
+                                <h1 class=" heading text-xl font-semibold">Add Dark Mode</h1>
                                 <br>
                                 <p
-                                    class="w-[230px]  bg-white overflow-hidden text-ellipsis line-clamp-2 p-4 rounded-xl">
+                                    class="w-[230px]  bg-white overflow-hidden text-ellipsis line-clamp-2 p-1  rounded-xl">
                                     Store the user's preference in localStorage, update CSS variables dynamically, and
                                     apply a smooth transition effect.</p>
                                 <br>
@@ -101,19 +102,20 @@
                                         <p>Deadline</p>
                                         <h1 class="font-bold">21 March 2025</h1>
                                     </span>
-                                    <button class="bg-[#3752FD] px-3 py-2 rounded-xl text-white p">Completed</button>
+                                    <button
+                                        class=" clickButton  bg-[#3752FD] px-3 py-2 rounded-xl text-white p">Completed</button>
 
                                 </div>
                             </div>
 
                             <!--  -->
-                            <div class="bg-slate-100 p-4 rounded-xl ">
+                            <div class="bg-slate-100 p-4 rounded-xl card ">
                                 <h1 class="bg-white rounded-lg w-20 text-center">SwiftPay</h1>
                                 <br>
-                                <h1 class="text-xl font-semibold">Optimize Home page  </h1>
+                                <h1  class=" heading text-xl font-semibold">Optimize Home page  </h1>
                                 <br>
                                 <p
-                                    class="w-[230px]  bg-white overflow-hidden text-ellipsis line-clamp-2 p-4 rounded-xl">
+                                    class="w-[230px]  bg-white overflow-hidden text-ellipsis line-clamp-2  p-1  rounded-xl">
                                     Debug using Chrome DevTools, check for overlapping elements, and ensure onClick
                                     works
                                     properly</p>
@@ -123,18 +125,19 @@
                                         <p>Deadline</p>
                                         <h1 class="font-bold">21 March 2025</h1>
                                     </span>
-                                    <button class="bg-[#3752FD] px-3 py-2 rounded-xl text-white p">Completed</button>
+                                    <button
+                                        class="  clickButton bg-[#3752FD] px-3 py-2 rounded-xl text-white p">Completed</button>
 
                                 </div>
                             </div>
                             <!--  -->
-                            <div class="bg-slate-100 p-4 rounded-xl ">
+                            <div class="bg-slate-100 p-4 rounded-xl card ">
                                 <h1 class="bg-white rounded-lg w-20 text-center">Meta</h1>
                                 <br>
-                                <h1 class="text-xl font-semibold">Add new emoji 🤲  </h1>
+                                <h1  class=" heading text-xl font-semibold">Add new emoji 🤲  </h1>
                                 <br>
                                 <p
-                                    class="w-[230px]  bg-white overflow-hidden text-ellipsis line-clamp-2 p-4 rounded-xl">
+                                    class="w-[230px]  bg-white overflow-hidden text-ellipsis line-clamp-2  p-1  rounded-xl">
                                     Debug using Chrome DevTools, check for overlapping elements, and ensure onClick
                                     works properly</p>
                                 <br>
@@ -143,18 +146,19 @@
                                         <p>Deadline</p>
                                         <h1 class="font-bold">21 March 2025</h1>
                                     </span>
-                                    <button class="bg-[#3752FD] px-3 py-2 rounded-xl text-white p">Completed</button>
+                                    <button
+                                        class=" clickButton bg-[#3752FD] px-3 py-2 rounded-xl text-white p">Completed</button>
 
                                 </div>
                             </div>
                             <!--  -->
-                            <div class="bg-slate-100 p-4 rounded-xl ">
+                            <div class="bg-slate-100 p-4 rounded-xl card ">
                                 <h1 class="bg-white rounded-lg w-28 text-center">Google LLC</h1>
                                 <br>
-                                <h1 class="text-xl font-semibold">Integrate OpenAI API   </h1>
+                                <h1  class=" heading text-xl font-semibold">Integrate OpenAI API   </h1>
                                 <br>
                                 <p
-                                    class="w-[230px]  bg-white overflow-hidden text-ellipsis line-clamp-2 p-4 rounded-xl">
+                                    class="w-[230px]  bg-white overflow-hidden text-ellipsis line-clamp-2  p-1  rounded-xl">
                                     Debug using Chrome DevTools, check for overlapping elements, and ensure onClick
                                     works properly</p>
                                 <br>
@@ -163,18 +167,19 @@
                                         <p>Deadline</p>
                                         <h1 class="font-bold">21 March 2025</h1>
                                     </span>
-                                    <button class="bg-[#3752FD] px-3 py-2 rounded-xl text-white p">Completed</button>
+                                    <button
+                                        class=" clickButton bg-[#3752FD] px-3 py-2 rounded-xl text-white p">Completed</button>
 
                                 </div>
                             </div>
                             <!--  -->
-                            <div class="bg-slate-100 p-4 rounded-xl ">
+                            <div class="bg-slate-100 p-4 rounded-xl card  ">
                                 <h1 class="bg-white rounded-lg w-20 text-center">Glassdoar</h1>
                                 <br>
-                                <h1 class="text-xl font-semibold">Improve Job searching   </h1>
+                                <h1 class=" heading text-xl font-semibold">Improve Job searching   </h1>
                                 <br>
                                 <p
-                                    class="max-w-[230px]  bg-white overflow-hidden text-ellipsis line-clamp-2 p-4 rounded-xl">
+                                    class="max-w-[230px]  bg-white overflow-hidden text-ellipsis line-clamp-2  p-1  rounded-xl">
                                     Debug using Chrome DevTools, check for overlapping elements, and ensure onClick
                                     works
                                     properly</p>
@@ -184,7 +189,8 @@
                                         <p>Deadline</p>
                                         <h1 class="font-bold">21 March 2025</h1>
                                     </span>
-                                    <button class="bg-[#3752FD] px-3 py-2 rounded-xl text-white p">Completed</button>
+                                    <button
+                                        class="clickButton  bg-[#3752FD] px-3 py-2 rounded-xl text-white p">Completed</button>
 
                                 </div>
                             </div>
@@ -197,12 +203,13 @@
 
 
                     <!--  -->
-                    <div class="bg-white px-25 py-8 rounded-2xl w-80 h-full">
-                        <span class="flex justify-between items-center pb-2 ">
-                            <i class="fa-solid fa-rotate-right"></i>
-                            <h1>Activity Log</h1>
+                    <div class="bg-white text-center py-8 rounded-2xl w-80 ">
+                        <span class="flex gap-2 items-center justify-center pb-2 ">
+                            <i class="fa-solid fa-rotate-right "></i>
+                            <h1 class="">Activity Log</h1>
                         </span>
-                        <button class="bg-[#3752FD] px-3 py-2 rounded-xl text-white p">Clear History</button>
+                        <button id="history-btn" class=" bg-[#3752FD] px-3 py-2 rounded-xl text-white mb-4">Clear
+                            History</button>
                         <div id="history-container">
 
 
@@ -218,6 +225,8 @@
     </section>
     <!--  -->
     <script src="js/index.js"></script>
+    <script src="js/event.js"></script>
+
 </body>
 
 </html>
