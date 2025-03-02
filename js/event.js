@@ -1,28 +1,29 @@
 let allButton = document.querySelectorAll('.clickButton');
 
 allButton.forEach(button => {
-    button.addEventListener('click',function(){
+    button.addEventListener('click',function(event){
         alert('Board update successfully  ')
 
+        event.preventDefault()
         
         
-       let add = document.getElementById('add');
-       let cut = document.getElementById('cut');
+       let add = valueConverted('add');
+       let cut = valueConverted('cut');
        let history = document.getElementById('history-container');
 
-       add.innerText = parseInt(add.innerText) + 1 ;
-       cut.innerText = parseInt(cut.innerText) - 1 ;
+       document.getElementById('add').innerText = add + 1 ;
+       document.getElementById('cut').innerText = cut - 1 ;
+      
 
-     
-        let currentTime = new Date().toLocaleTimeString();
-        let  card = this.parentElement;
-        let headings = document.querySelector('.heading').innerText ;
-        let heading = card.headings;
+        let currentTime = new Date().toLocaleTimeString('en-US');
+        
+        let headings = document.getElementById('title').innerText ;
+        
         let items = document.createElement('p');
-        items.classList.add('bg-slate-200', 'p-2', 'rounded', 'mb-2');
+        items.classList.add('bg-slate-200', 'p-2', 'rounded', 'm-2');
         items.innerHTML =`
         <h1>you have complete the task </h1>
-        <h1> ${heading}</h1>
+        <h1> ${headings}</h1>
         <h1> at time : ${currentTime}</h1>
         `;
         history.appendChild(items);
@@ -33,6 +34,16 @@ allButton.forEach(button => {
         
        
     });
+});
+
+let lastButton = allButton[allButton.length - 1]; 
+lastButton.addEventListener('click', function(event) {
+    event.preventDefault();
+
+    alert('Board updated successfully!');
+    alert('Task Completed! ✅');
+
+    updateTask(event, this);
 });
 
 document.getElementById('history-btn').addEventListener('click',function(){
